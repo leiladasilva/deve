@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import productDetailview from '@/views/productDetailview'
+import ProductDetailView from '@/views/productDetailview.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/product/:id',
-      name: 'productDetailview',
-      component: productDetailview,
+      name: 'ProductDetailView',
+      component: ProductDetailView,
       props:true
     },
     {
